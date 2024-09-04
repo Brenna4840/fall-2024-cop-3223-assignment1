@@ -2,7 +2,7 @@
 // fracturing.c
 // Author: Brenna Aleshire 
 // UCFID: 5618666 
-// Date: 9/2/23
+// Date: 9/4/23
 // Class: COP 3223, Professor Parra
 // Purpose: This program computes the answer to specific questions  
 // Input: Points for calculation 
@@ -14,41 +14,41 @@
 
 #define PI 3.14 
 
-double calculate_distance( ); 
-double calc_distance_no_print( ); 
-double calculate_perimeter( ); 
-double calculate_area( );
-double calculate_width( ); 
-double calculate_height( );  
-double ask_for_user_input( ); 
+double calculateDistance( ); 
+double calcDistanceNoPrint( ); 
+double calculatePerimeter( ); 
+double calculateArea( );
+double calculateWidth( ); 
+double calculateHeight( );  
+double askForUserInput( ); 
 
 int main(int argc, char **argv) 
 {
-    calculate_distance(); 
+    calculateDistance(); 
     printf("\n"); 
-    calculate_perimeter();
+    calculatePerimeter();
     printf("\n"); 
-    calculate_area(); 
+    calculateArea(); 
     printf("\n"); 
-    calculate_width(); 
+    calculateWidth(); 
     printf("\n"); 
-    calculate_height();  
+    calculateHeight();  
     printf("\n"); 
-    //ask_for_user_input(); 
+    //askForUserInput(); 
 
     return 0; 
 }
 
 
 //********************************************************
-// double calculate_distance()
+// double calculateDistance()
 //
 // Purpose:          Calculates the distance between two entered points 
 // Output:           Asks the user for the points and prints out the answer 
 // Precondition:     None.
 // Postcondition:    Returns the answer 
 //********************************************************
-double calculate_distance() 
+double calculateDistance() 
 {
     double x1 = 0; 
     double y1 = 0; 
@@ -62,21 +62,21 @@ double calculate_distance()
 
     double answer = sqrt(pow((x2 - x1), 2) + pow((y2 - y1), 2)); 
 
-    printf("The distance between the two points is %lf.\n", answer); 
+    printf("The distance between the two points is %0.3lf.\n", answer); 
 
     return answer; 
 }
 
 
 //********************************************************
-// double calc_distance_no_print()
+// double calcDistanceNoPrint()
 //
 // Purpose:          Calculates the distance between two entered points 
 // Output:           Asks the user for the points  
 // Precondition:     None. 
 // Postcondition:    Returns the answer 
 //********************************************************
-double calc_distance_no_print() 
+double calcDistanceNoPrint() 
 {
     double x1 = 0; 
     double y1 = 0; 
@@ -95,50 +95,50 @@ double calc_distance_no_print()
 
 
 //********************************************************
-// double calculate_perimeter()
+// double calculatePerimeter()
 //
 // Purpose:          Calculates the perimeter between two entered points 
 // Output:           Asks the user for the points and prints out the answer
 // Precondition:     None. 
 // Postcondition:    Dificulty rating 
 //********************************************************
-double calculate_perimeter()
+double calculatePerimeter()
 {
-    double answer = PI*calc_distance_no_print(); 
+    double answer = PI*calcDistanceNoPrint(); 
 
-    printf("The perimeter of the city encompassed by your request is %lf. \n", answer); 
+    printf("The perimeter of the city encompassed by your request is %0.3lf. \n", answer); 
 
-    return 5; 
+    return 2; 
 }
 
 
 //********************************************************
-// double calculate_area()
+// double calculateArea()
 //
 // Purpose:          Calculates the perimeter between two entered points 
 // Output:           Asks the user for the points and prints out the answer
 // Precondition:     None. 
 // Postcondition:    Dificulty rating 
 //********************************************************
-double calculate_area()
+double calculateArea()
 {
-    double answer = PI * pow((calc_distance_no_print() / 2), 2); 
+    double answer = PI * pow((calcDistanceNoPrint() / 2), 2); 
     
-    printf("The area of the city encompassed by your request is %lf. \n", answer); 
+    printf("The area of the city encompassed by your request is %0.3lf. \n", answer); 
 
-    return 5; 
+    return 1; 
 }
 
 
 //********************************************************
-// double calculate_width()
+// double calculateWidth()
 //
 // Purpose:          Calculates the width between two entered points 
 // Output:           Asks the user for the points and prints out the answer 
 // Precondition:     None. 
 // Postcondition:    Dificulty rating 
 //********************************************************
-double calculate_width()
+double calculateWidth()
 {
     double x1 = 0; 
     double y1 = 0; 
@@ -152,21 +152,21 @@ double calculate_width()
 
     double answer = x2-x1;   
     
-    printf("The width of the city encompassed by your request is %lf. \n", answer); 
+    printf("The width of the city encompassed by your request is %0.3lf. \n", answer); 
 
     return 1; 
 }
 
 
 //********************************************************
-// double calculate_height()
+// double calculateHeight()
 //
 // Purpose:          Calculates the width between two entered points 
 // Output:           Asks the user for the points and prints out the answer 
 // Precondition:     None. 
 // Postcondition:    Dificulty rating 
 //********************************************************
-double calculate_height()
+double calculateHeight()
 {
     double x1 = 0; 
     double y1 = 0; 
@@ -180,13 +180,13 @@ double calculate_height()
 
     double answer = y2-y1;   
    
-    printf("The height of the city encompassed by your request is %lf. \n", answer); 
+    printf("The height of the city encompassed by your request is %0.3lf. \n", answer); 
 
     return 1; 
 }
 
 
-double ask_for_user_input()
+double askForUserInput()
 {
     //
 
