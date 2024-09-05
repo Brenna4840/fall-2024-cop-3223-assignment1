@@ -138,17 +138,7 @@ double calculateArea()
 //********************************************************
 double calculateWidth()
 {
-    double x1 = 0; 
-    double y1 = 0; 
-    double x2 = 0; 
-    double y2 = 0; 
-
-    printf("Point #1 entered: "); 
-    scanf("%lf %lf", &x1, &y1); 
-    printf("Point #2 entered: "); 
-    scanf("%lf %lf", &x2, &y2); 
-
-    double answer = x2-x1;   
+    double answer = calcDistanceNoPrint(); 
     
     printf("The width of the city encompassed by your request is %0.3lf. \n", answer); 
 
@@ -166,17 +156,7 @@ double calculateWidth()
 //********************************************************
 double calculateHeight()
 {
-    double x1 = 0; 
-    double y1 = 0; 
-    double x2 = 0; 
-    double y2 = 0; 
-
-    printf("Point #1 entered: "); 
-    scanf("%lf %lf", &x1, &y1); 
-    printf("Point #2 entered: "); 
-    scanf("%lf %lf", &x2, &y2); 
-
-    double answer = y2-y1;   
+    double answer = calcDistanceNoPrint(); 
    
     printf("The height of the city encompassed by your request is %0.3lf. \n", answer); 
 
