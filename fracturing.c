@@ -2,7 +2,7 @@
 // fracturing.c
 // Author: Brenna Aleshire 
 // UCFID: 5618666 
-// Date: 9/4/23
+// Date: 9/8/23 
 // Class: COP 3223, Professor Parra
 // Purpose: This program computes the answer to specific questions  
 // Input: Points for calculation 
@@ -162,3 +162,4 @@ double calculateHeight()
 
     return 1; 
 }
+ 
